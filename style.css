@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.slideshow{
+    width: 800px;
+    height: 420px;
+    margin: 0 auto;
+    overflow:hidden;
+    border: outline;
+    border-radius: 25px;
+    outline-style: solid;
+    outline-width: 10px;
+    outline-color: orange;
+    
+}
+.slideshow input{
+    display:none;
+}
+.imgs{
+    width: 4000px;
+    height: 420px;  
+    display: flex;
+}
+.slide{
+    width: 20%;
+    position: relative;
+    
+    
+}
+.slide img{
+    width: 800px;
+    height: auto;
+}
+.nav{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px; 
+    display: flex ;
+    justify-content: center;
+    
+     
+    
+}
+.navbtn{
+    border: 3px solid rgb(255, 255, 255); 
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 25px;
+    transition: 1s;
+    
+}
+.navbtn:hover{
+    background-color:rgb(255, 111, 0) ;
+}
+#rd1:checked ~ .imgs{
+    margin-left: 0;
+
+}
+#rd2:checked ~ .imgs{
+    margin-left: -100%;
+}
+#rd3:checked ~ .imgs{
+    margin-left: -200%;
+
+}
+
+#rd4:checked ~ .imgs{
+    margin-left: -300%;
+
+}
+#rd5:checked ~ .imgs{
+    margin-left: -400%;
+
+}
+
+
